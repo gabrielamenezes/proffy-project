@@ -81,3 +81,30 @@
 .total-connections img {
     margin-left: 0.8rem;
 }
+
+@media (min-width: 1100px) {
+    #page-landing #container {
+        max-width: 1100px;
+        display: grid; /* avisar que estou usando grid */
+        grid-template-columns: 2fr 2fr 1fr; /*  */
+        grid-template-rows: 350px 1fr;
+        grid-template-areas: "proffy image image" /* primeira linha: proffy ocupando 1 fracao image ocupando o resto*/
+        "button button texting"; /* segunda linha: buttons ocupando 2 areas e o texting 1 */
+    }
+
+    .logo-container{
+        grid-area: proffy;
+
+    }
+
+    .hero-image {
+        grid-area: image;
+    }
+    .buttons-container {
+        grid-area: button;
+    }
+
+    .total-connections {
+        grid-area: texting;
+    }
+}
