@@ -1,0 +1,55 @@
+#page-study #container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header .top-bar-container {
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+}
+.page-header .top-bar-container a:hover {
+    opacity: 0.6;
+}
+
+.page-header .top-bar-container a {
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+.page-header .top-bar-container img {
+    height: 1.6rem;
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 3.2rem auto;
+}
+
+.page-header .header-content strong {
+    font: 700 3.6rem Archivo;
+    color: var(--color-title-in-primary);
+    line-height: 4.2rem;
+}
+
+#search-teachers {
+    margin-top: 3.2rem;
+}
+
+#search-teachers label {
+    color: var(--color-text-in-primary);
+}
+
+
+#search-teachers .select-block {
+    margin-bottom: 1.4rem;
+}
