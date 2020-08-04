@@ -88,13 +88,25 @@
         display: grid; /* avisar que estou usando grid */
         grid-template-columns: 2fr 2fr 1fr; /*  */
         grid-template-rows: 350px 1fr;
-        grid-template-areas: "proffy image image" /* primeira linha: proffy ocupando 1 fracao image ocupando o resto*/
-        "button button texting"; /* segunda linha: buttons ocupando 2 areas e o texting 1 */
+        grid-template-areas: "proffy image image" 
+        /* primeira linha: proffy ocupando 1 fracao image ocupando o resto*/
+        "button button texting"; 
+        /* segunda linha: buttons ocupando 2 areas e o texting 1 */
+
+        /* GRID PARA SEPARAR ELEMENTOS */
+        gap: 60px;
     }
 
     .logo-container{
         grid-area: proffy;
+        text-align: initial;
+        align-self: center; /* todo conteúdo desse grid vai alinhar ao centro */
 
+    }
+
+    .logo-container img {
+        height: 100%;
+        
     }
 
     .hero-image {
@@ -102,9 +114,12 @@
     }
     .buttons-container {
         grid-area: button;
+        justify-content: flex-start; /* sobescreve botão com justify center no mobile */
     }
 
     .total-connections {
         grid-area: texting;
+        justify-self: end;
+        width: 100%;
     }
 }
