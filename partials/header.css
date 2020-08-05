@@ -22,7 +22,7 @@
     height: 3.2rem;
     transition: opacity 0.2s;
 }
-.page-header .top-bar-container img {
+.page-header .top-bar-container > img {
     height: 1.6rem;
 }
 
@@ -36,6 +36,14 @@
     font: 700 3.6rem Archivo;
     color: var(--color-title-in-primary);
     line-height: 4.2rem;
+}
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
 }
 
 
