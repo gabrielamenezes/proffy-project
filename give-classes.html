@@ -85,44 +85,44 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="schedule-items">
                     <legend>Horários disponíveis
                         <button id="add-time">+ Novo Horário</button>
                     </legend>
+                    <div class="schedule-item">
+
+                        <div class="select-block">
+                            <label for="weekday">Dia da Semana</label>
+                            <select name="weekday[]" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="0">Dommingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time" name="time_from[]" required>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]" required>
+                        </div>
+                    </div>
                 </fieldset>
-                <div class="schedule-item">
-
-                    <div class="select-block">
-                        <label for="weekday">Dia da Semana</label>
-                        <select name="weekday[]" required>
-                            <option value="">Selecione uma opção</option>
-                            <option value="0">Dommingo</option>
-                            <option value="1">Segunda-feira</option>
-                            <option value="2">Terça-feira</option>
-                            <option value="3">Quarta-feira</option>
-                            <option value="4">Quinta-feira</option>
-                            <option value="5">Sexta-feira</option>
-                            <option value="6">Sábado</option>
-                        </select>
-                    </div>
-
-                    <div class="input-block">
-                        <label for="time_from">Das</label>
-                        <input type="time" name="time_from[]" required>
-                    </div>
-
-                    <div class="input-block">
-                        <label for="time_to">Até</label>
-                        <input type="time" name="time_to[]" required>
-                    </div>
-                </div>
             </form>
 
             <footer>
                 <p>
                     <img src="images/icons/warning.svg" alt="Aviso Importante">
                     Importante! <br>
-                    Preencha todos os dados 
+                    Preencha todos os dados
                 </p>
                 <!-- button type submit só envia dados se o botão estiver dentro do form, para mudar isso. Coloque o atributo form com o id do formulario criado anteriormente -->
                 <button type="submit" form="create-class">Salvar Cadastro</button>
