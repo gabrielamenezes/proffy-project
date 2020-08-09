@@ -1,3 +1,5 @@
+//Dados
+
 const proffys = [
     {name: "Diego Fernandes", 
     avatar: "https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4", 
@@ -57,13 +59,23 @@ const subjects = [
     "Português",
     "Química"
 ]
+
+const weekdays = [
+    "Domingo",
+    "Segunda",
+    "Terça",
+    "Quarta",
+    "Quinta",
+    "Sexta",
+    "Sábado"
+]
 function pageLanding(req, res) {
     return res.render("index.html")
 }
 
 function pageStudy(req, res) {
     const filters = req.query
-    return res.render("study.html", {proffys, filters, subjects})
+    return res.render("study.html", {proffys, filters, subjects, weekdays})
 }
 
 function pageGiveClasses(req, res) {
@@ -88,5 +100,5 @@ server.use(express.static("public"))
 .get("/", pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
-
+//start do servidor
 .listen(5500)
