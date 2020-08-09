@@ -15,7 +15,7 @@
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> • 
  <a href="#features">Features</a> • 
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
  <a href="#-como-contribuir-para-o-projeto">Contribuição</a> •  
  <a href="#autor">Autor</a> •
 </p>
