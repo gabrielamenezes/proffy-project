@@ -57,7 +57,8 @@ const subjects = [
     "História",
     "Matemática",
     "Português",
-    "Química"
+    "Química",
+    "Inglês"
 ]
 
 const weekdays = [
@@ -69,6 +70,13 @@ const weekdays = [
     "Sexta",
     "Sábado"
 ]
+
+//funcionalidades
+
+function getSubject(subjectNumber) {
+    const arrayPosition = +subjectNumber - 1
+    return subjects[arrayPosition];
+}
 function pageLanding(req, res) {
     return res.render("index.html")
 }
@@ -79,7 +87,22 @@ function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
+    const data = req.query
+
+    // []
+    const isNotEmpty = Object.keys(data).length > 0 //pegando as chaves desse objeto e transformando em um aray
+
+    //se tiver data
+    if(isNotEmpty) {
+
+        data.subject = getSubject(data.subject) //data.subject é a matéria que foi preenchida pelo professor que quer se cadastrar! data = req.query e subject é a matéria
+        //adicionar data a lista de proffys (adicionando proffy)
+        proffys.push(data)
+        return res.redirect("/study")
+    }
+    //se nao, mostrar a pagina
     return res.render("give-classes.html", {subjects, weekdays})
+
 }
 // pegar uma dependência que está no projeto
 const express = require('express')
