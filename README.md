@@ -16,7 +16,7 @@
  <a href="#-sobre">Sobre</a> • 
  <a href="#-features">Features</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> •  
+ <a href="#-contribuicao">Contribuição</a> •  
  <a href="#-autor">Autor</a> •
 </p>
 
@@ -58,7 +58,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
 4. Envie as suas alterações: `git push origin my-feature`
 
-### Autor
+## Autor
 ---
 
 <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/64161478?s=460&u=1356f8b491eecccaeb9afb16c34beb8a00c75cf3&v=4" width="100px;" alt=""/>
