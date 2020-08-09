@@ -10,7 +10,7 @@
 </div>
 
 <h4 align="center"> 
-	🚧 Em construção...  🚧
+:white_check_mark: FINALIZADO :white_check_mark:
 </h4> 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> • 
@@ -34,7 +34,7 @@ O NLW é uma experiência online com muito conteúdo prático, desafios e hacks 
 
 - [x] Front-End
 - [x] Back-end
-- [ ] Banco de Dados
+- [x] Banco de Dados
 
 ---
 
