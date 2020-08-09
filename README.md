@@ -48,7 +48,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Express](https://expressjs.com/pt-br/)
 - [Node.js](https://nodejs.org/en/)
 - [NunJucks](https://mozilla.github.io/nunjucks/)
-
+- [SQLite](https://www.sqlite.org/index.html)
 ---
 
 ## 💪 Como contribuir para o projeto
