@@ -13,11 +13,11 @@
 	🚧 Em construção...  🚧
 </h4> 
 <p align="center">
- <a href="#-sobre">Sobre</a> • 
- <a href="#-features">Features</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-contribuicao">Contribuição</a> •  
- <a href="#-autor">Autor</a> •
+ <a href="#-sobre-o-projeto">Sobre</a> • 
+ <a href="#features">Features</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#-como-contribuir-para-o-projeto">Contribuição</a> •  
+ <a href="#autor">Autor</a> •
 </p>
 
 ## 💻 Sobre o projeto
