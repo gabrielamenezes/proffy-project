@@ -79,7 +79,7 @@ function pageStudy(req, res) {
 }
 
 function pageGiveClasses(req, res) {
-    return res.render("give-classes.html")
+    return res.render("give-classes.html", {subjects, weekdays})
 }
 // pegar uma dependência que está no projeto
 const express = require('express')
